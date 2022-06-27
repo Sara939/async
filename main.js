@@ -1,3 +1,5 @@
+////////////////////////////////////////////////////////////////promise:
+// 1:
 // function wecomemassage(){
 //     return new Promise((resolve, reject)=>{
 //         let mydate= new Date().getHours();
@@ -8,6 +10,8 @@
 //             reject("good afternoon")}
 //     });
 // }
+
+// 2:
 // wecomemassage()
 // .then((mytext)=>{
 //     mydiv.innerHTML= mytext
@@ -16,6 +20,7 @@
 //     mydiv2.innerHTML= mytext2
 // })
 
+// 3:
 // function checkfunc(num1, num2){
 //     return new Promise ((resolve, reject)=>{
 
@@ -47,7 +52,7 @@
 
 
 
-// fetch
+//////////////////////////////////////////////////////////////////////// fetch
 async function getresponse() {
     load.innerHTML= `<img style=width:100px highet:150px src="https://cssbud.com/wp-content/uploads/2021/08/beepboop.gif"/> `
     try{ 

@@ -43,18 +43,18 @@
 // 5:
 
 
-function ifnuminarray(num, arraynum){
-    return new Promise ((resolve, reject)=>{
-        let num ;
-        let arraynum= [];
-        for(let i=0; i<arraynum.length; i++) {  
-            if(num == arraynum[i]){
-                resolve("yes")     
-            }
-        }
-        reject("no")  
-        });
-}
+// function ifnuminarray(num, arraynum){
+//     return new Promise ((resolve, reject)=>{
+//         let num ;
+//         let arraynum= [];
+//         for(let i=0; i<arraynum.length; i++) {  
+//             if(num == arraynum[i]){
+//                 resolve("yes")     
+//             }
+//         }
+//         reject("no")  
+//         });
+// }
 
 
 
@@ -79,38 +79,25 @@ function ifnuminarray(num, arraynum){
 // .catch((res)=>{
 //     mydivtag.innerHTML= res
 // })
+// 7:////////////////////////////////////////////////////
 
-// 7:
-
-
-
+// 8:
 
 
-ifnuminarray()
-.then((res)=>{
-    mydivtag.innerHTML= res
-})
-.catch((res)=>{
-    mydivtag.innerHTML= res
-})
+// async function callfunc(){
+//     try {await ifnuminarray(9,[65,39,5,7,8]).then(res=>console.log(res))}
+//     catch(err){
+//         console.log(err)
+//     }
+// };
 
+// callfunc();
 
 
 
+// fetch:// //////////////////////////////////////////////////////////////////////// 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// //////////////////////////////////////////////////////////////////////// fetch
+// class work:
 // async function getresponse() {
 //     load.innerHTML= `<img style=width:100px highet:150px src="https://cssbud.com/wp-content/uploads/2021/08/beepboop.gif"/> `
 //     try{ 
@@ -177,7 +164,76 @@ ifnuminarray()
 // }
 
 
+// 1:
+// async function conecttolink(){
+//     try{
+//         return await fetch("https://moviesmern.herokuapp.com/movies/all")
+//         .then(response=> response.json())
+//     }
+//     catch(err){}
+//     finally{}
+// }
 
+// 2:
+// conecttolink().then(result=>console.log(result))
+
+// 3+4:
+
+// async function conecttolink(){
+//     myloadbtn.disabled= true;
+//     loadgif.innerHTML= `<img src= "https://www.print-club.co.il/wp-content/uploads/2021/08/076_-loading_animated_dribbble_copy.gif"/>`
+//     try{
+//         return await fetch("https://moviesmern.herokuapp.com/movies/all")
+//         .then(response=> response.json())
+//     }
+//     catch(err){}
+//     finally{
+//         myloadbtn.disabled= false;
+//         loadgif.innerHTML= "";
+//     }
+// }
+
+// function playbtn(){
+    
+//   conecttolink().then(result=>console.log(result))  
+// }
+
+// 5-8:
+// async function getanswer(){
+//     myloadbtn.disabled= true;
+//     load.innerHTML= `<img src= "https://i.pinimg.com/originals/42/a8/d4/42a8d4625aeb088c45eba5a84ca36325.gif"/>`
+//     try{
+//         return await fetch("https://cat-fact.herokuapp.com/facts")
+//     }
+//     catch(err){
+//         console.log(err)
+//     }
+    
+//     finally{
+//         myloadbtn.disabled= false;
+//         load.innerHTML= "";
+//     }
+// }
+
+
+// getanswer().then(res=>console.log(res))
+// .catch(res=>console.log(res))
+
+// 9:
+
+async function conectfunc(){
+    try{
+        return await fetch ("https://placekeanu.com/200/150")
+        .then(res=>res.json())
+    }
+    catch(err){
+        console.log(err)
+    }
+    finally{
+
+    }
+}
+conectfunc().then (respons=>printanswer.innerHTML=respons.content)
 
 
 

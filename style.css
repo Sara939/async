@@ -9,8 +9,12 @@
 }
 button{
     background-color:rgba(33, 176, 148, 0.354);
-    height: 30px;
+    height: auto;
     width: 100px;
     margin: 10px;
     align-items: center;
+}
+img{
+    width: 140px;
+    height: 100px;
 }

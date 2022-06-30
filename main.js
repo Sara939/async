@@ -269,3 +269,24 @@
 
 //     getdata().then(res=>console.log(res.data))
 // }
+
+
+// mendetory: /////////////////////////////
+
+// async function getinfo(){
+//     try{
+//         return await fetch("https://api.mattermost.com/")
+//         .then(res=>res.json())
+//     }
+//     catch(err){
+//         console.log(err)
+//     }
+//     finally{
+
+//     }
+// }
+
+// function printinfo(){
+//     getinfo().then(res=>mydiv.innerHTML= res)
+// }
+

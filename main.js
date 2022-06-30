@@ -219,22 +219,53 @@
 // getanswer().then(res=>console.log(res))
 // .catch(res=>console.log(res))
 
-// 9:
+// 9-12:
 
-async function conectfunc(){
-    try{
-        return await fetch ("https://placekeanu.com/200/150")
-        .then(res=>res.json())
-    }
-    catch(err){
-        console.log(err)
-    }
-    finally{
+// async function conectfunc(){
+//     try{
+//         return await fetch("https://placekeanu.com/200/150",{
+//             mode: 'no-cors',
+//         }).then(res=>res.json())
+//     } catch(err){
+//         console.log('here',err)
+//     }
+// }
 
-    }
-}
-conectfunc().then (respons=>printanswer.innerHTML=respons.content)
-
-
+// (async function() {
+//     conectfunc().then(data => console.log(data))
+// })()
 
 
+// 13-17:
+
+
+// async function getdata(){
+//     try{
+//         load.innerHTML=  `<img src="https://cdn.dribbble.com/users/2973561/screenshots/5757826/loading__.gif"/>`
+//         myloadbtn.disabled= true;
+//         return await fetch("https://api.jikan.moe/v4/anime")
+//         .then(res=>res.json())
+//     }
+//     catch(err){
+//         console.log(err);
+//     }
+//     finally{
+//         myloadbtn.disabled= false;
+//         load.innerHTML=  "";
+//     }
+// }
+
+
+
+
+
+// // printdata().then(res=>console.log(res.data))
+
+
+// // printdata().then(res=>console.log(res.data.length))
+
+
+// function printdata(){
+
+//     getdata().then(res=>console.log(res.data))
+// }
